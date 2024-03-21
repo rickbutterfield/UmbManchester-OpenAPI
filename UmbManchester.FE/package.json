@@ -7,11 +7,16 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate": "openapi --input http://localhost:36865/umbraco/swagger/delivery/swagger.json --output src/api --postfixServices Resource --useOptions"
   },
   "dependencies": {
-    "astro": "^4.5.2",
     "@astrojs/check": "^0.5.8",
+    "astro": "^4.5.2",
     "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "marked": "^12.0.1",
+    "openapi-typescript-codegen": "^0.27.0"
   }
 }

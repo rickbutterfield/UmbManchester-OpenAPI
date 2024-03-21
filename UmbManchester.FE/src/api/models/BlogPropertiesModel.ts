@@ -1,0 +1,9 @@
+/* generated using openapi-typescript-codegen -- do no edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+import type { PageContentPropertiesModel } from './PageContentPropertiesModel';
+export type BlogPropertiesModel = (PageContentPropertiesModel & {
+    publishedDate?: string | null;
+});
+
